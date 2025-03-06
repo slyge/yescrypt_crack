@@ -1,7 +1,5 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=yescrypt_crack&theme=gruvbox)](https://github.com/cyclone-github/yescrypt_crack/)
-<!--
 [![Go Report Card](https://goreportcard.com/badge/github.com/cyclone-github/yescrypt_crack)](https://goreportcard.com/report/github.com/cyclone-github/yescrypt_crack)
--->
 [![GitHub issues](https://img.shields.io/github/issues/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/issues)
 [![License](https://img.shields.io/github/license/cyclone-github/yescrypt_crack.svg)](LICENSE)
 [![GitHub release](https://img.shields.io/github/release/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/releases)
@@ -9,7 +7,6 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/cyclone-github/yescrypt_crack.svg)](https://pkg.go.dev/github.com/cyclone-github/yescrypt_crack)
 -->
 
-# Coming Soon: Yescrypt Hash Cracker
 ```
 ./yescrypt_crack.bin -h hash.txt -w wordlist.txt
 
@@ -59,6 +56,11 @@ cat wordlist | ./yescrypt_crack.bin -h yescrypt.txt
 
 ./yescrypt_crack.bin -h yescrypt.txt -w wordlist.txt -o output.txt
 ```
+
+### Credits:
+* `yescrypt_crack` tool was written by cyclone in pure Go
+* `yescrypt_crack` uses Solar Designer's yescrypt-go implementation: https://github.com/openwall/yescrypt-go
+* The yescrypt algo was written by Solar Designer: https://www.openwall.com/yescrypt/
 
 ### Changelog:
 - https://github.com/cyclone-github/yescrypt_crack/blob/main/CHANGELOG.md
