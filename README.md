@@ -1,6 +1,8 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=yescrypt_crack&theme=gruvbox)](https://github.com/cyclone-github/yescrypt_crack/)
 
+<!--
 [![Go Report Card](https://goreportcard.com/badge/github.com/cyclone-github/yescrypt_crack)](https://goreportcard.com/report/github.com/cyclone-github/yescrypt_crack)
+-->
 [![GitHub issues](https://img.shields.io/github/issues/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/issues)
 [![License](https://img.shields.io/github/license/cyclone-github/yescrypt_crack.svg)](LICENSE)
 [![GitHub release](https://img.shields.io/github/release/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/releases)
@@ -11,20 +13,20 @@
 ```
 ./yescrypt_crack.bin -h hash.txt -w wordlist.txt
 
- ---------------------------------------------------------- 
-|                Cyclone's Yescrypt Cracker                |
-| https://https://github.com/cyclone-github/yescrypt_crack |
- ---------------------------------------------------------- 
+ -------------------------------------------------- 
+|            Cyclone's Yescrypt Cracker            |
+| https://github.com/cyclone-github/yescrypt_crack |
+ -------------------------------------------------- 
 
 Hash file:      hash.txt
 Total Hashes:   1
-CPU Threads:    56
+CPU Threads:    255
 Wordlist:       wordlist.txt
-2025/03/04 10:23:08 Working...
+2025/03/06 17:56:12 Working...
 $y$j9T$z7lNWyBfW4ZruGHCsFzDz/$Sz1GtrDDnsf0KfUE8mQHNJqGyG32TDWC287DdU97dz.:cyclone123
-2025/03/04 10:23:20 Cracked: 1/1 431.78 h/s 00h:00m:11s
+2025/03/06 17:56:48 Cracked: 1/1 1403.15 h/s 00h:00m:35s
 
-2025/03/04 10:23:20 Finished
+2025/03/06 17:56:48 Finished
 ```
 ### Info:
 I wrote this tool since yescrypt has become the default /etc/shadow hash for many popular linux distros such as Debian, Ubuntu, RHEL, Fedora, Arch, etc, and due to the very limited hash cracking tools that support yescrypt. Hashcat currently lacks support for yescrypt, and while John the Ripper supports yescrypt in its bleeding-edge version, getting JtR compiled with yescrypt support can be challenging for newer users due to the required linux lib "libxcrypt" -- this is especially true for Windows users. 
